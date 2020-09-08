@@ -28,11 +28,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-            if(!cidade.all{it.isLetter() || !cidade.equals(" ")}){
-            Toast.makeText(
-                this, "O nome da cidade só deve conter letras", Toast.LENGTH_LONG
-            ).show()
-            }else if (contaminados > habitantes) {
+             if (contaminados > habitantes) {
                 Toast.makeText(
                     this, "O Número de contaminados não pode ser maior " +
                             "que o número de habitantes", Toast.LENGTH_LONG
